@@ -6,7 +6,7 @@ Easybuild recipe to compile specfem3d on NeSI platforms
 
 ```
 export NESI_EASYBUILD_PROJECT_ID=<projectID>   ## e.g. nesi12345
-module load project EasyBuild
+module load project
 ```
 
 ## Building package X
