@@ -7,6 +7,12 @@ Easybuild recipe to compile specfem3d on NeSI platforms
 ```
 export NESI_EASYBUILD_PROJECT_ID=<projectID>   ## e.g. nesi12345
 module load project EasyBuild
-eb <package>
+```
+
+## Building package X
+
+```
+cd maui
+eb X.eb --robot
 ```
 
