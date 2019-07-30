@@ -19,7 +19,14 @@ git clone https://github.com/pletzer/eb_specfem3d
 
 ```
 cd eb_specfem3d/maui
-module swap PrgEnv-cray/6.0.5 PrgEnv-cray/6.0.4 # may change over time
+# download the source
+git clone --recursive --branch devel https://github.com/geodynamics/specfem3d.git
+tar cfz SPECFEM3D-20190730.tar.gz specfem3d
+mv SPECFEM3D-20190730.tar.gz s/SPECFEM3D
+
+module swap PrgEnv-cray/6.0.5 PrgEnv-cray/6.0.4 # currently needed
+
+# now build
 eb SPECFEM3D-20190730-CrayCCE-18.08.eb --robot
 ```
 
