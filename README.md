@@ -9,10 +9,18 @@ export NESI_EASYBUILD_PROJECT_ID=<projectID>   ## e.g. nesi12345
 module load project
 ```
 
-## Building package X
+## Build
 
 ```
 cd maui
-eb X.eb --robot
+module swap PrgEnv-cray/6.0.5 PrgEnv-cray/6.0.4 # may change over time
+eb SPECFEM3D-20190730-CrayCCE-18.08.eb --robot
 ```
+
+## Load
+
+```
+module load SPECFEM3D/20190730-CrayCCE-18.08
+```
+
 
