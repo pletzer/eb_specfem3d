@@ -25,6 +25,7 @@ git clone --recursive --branch devel https://github.com/geodynamics/specfem3d.gi
 
 # let's say you downloaded the source on 2019-07-30
 tar cfz SPECFEM3D-20190730.tar.gz specfem3d
+mkdir -p s/SPECFEM3D
 mv SPECFEM3D-20190730.tar.gz s/SPECFEM3D
 
 # now build
