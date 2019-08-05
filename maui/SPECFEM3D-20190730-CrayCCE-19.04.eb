@@ -27,7 +27,8 @@ dependencies = [
 
 configopts = 'FC=ftn CC=cc CXX=CC MPIFC=ftn MPICC=cc MPICXX=CC --with-mpi --enable-openmp --enable-vectorization'
 
-parallel = 1
+buildopts = "all"
+parallel = 4
 
 # runtest = 'check'
 
