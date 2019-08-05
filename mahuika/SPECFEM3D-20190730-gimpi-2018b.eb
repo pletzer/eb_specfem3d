@@ -29,12 +29,13 @@ dependencies = [
 
 configopts = 'MPIFC=mpif90 MPICC=mpicc MPICXX=mpic++ --with-scotch-dir=$EBROOTSCOTCH --with-mpi --enable-openmp --enable-vectorization'
 
-parallel = 1
+buildopts = "all"
+parallel = 4
 
 # runtest = 'check'
 
 sanity_check_paths = {
-    'files': ['bin/xmeshfem3D', 'bin/xspecfem3D', ],
+    'files': ['bin/xmeshfem3D', 'bin/xdecompose_mesh', 'bin/xgenerate_databases', 'bin/xinverse_problem_for_model'],
     'dirs' : [],
 }
 
